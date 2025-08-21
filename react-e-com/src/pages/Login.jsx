@@ -12,18 +12,18 @@ const Login = () => {
     }
    
   return (
-    <div>
-        <h1>Login</h1>
+    <div className='auth-container'>
+        <h1 className='head'>Login</h1>
         {
             data && data.message && <p  style={{ color: 'red'}}>{data.message}</p>
         }
-        <Form method='post' action='/login'>
-            <input type="text" name='email' placeholder='Username' />
-            <input type="password" name='password' placeholder='Password' />
-            <button type='submit'>Login</button>
+        <Form className='form-con' method='post' action='/login'>
+            <input className='name' type="text" name='email' placeholder='Username' />
+            <input  className='password' type="password" name='password' placeholder='Password' />
+            <button  className='btn1' type='submit'>Login</button>
         </Form>
 
-        <p>Don't have account?  <Link to="/register">Register now</Link> </p>
+        <p className='para' >Don't have account?  <Link to="/register">Register now</Link> </p>
     </div>
   )
 }

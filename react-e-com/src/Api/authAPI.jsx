@@ -14,6 +14,7 @@ export const LoginAction = async ({ request }) => {
         });
 
 
+        console.log(response.data);
         return response.data;
     } catch (error) {
         return error.response.data;

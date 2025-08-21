@@ -4,8 +4,7 @@ body {
   min-height: 100vh;
 }
 
-div {
-  /* Center the form container */
+.auth-container{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +12,7 @@ div {
   min-height: 80vh;
 }
 
-h1 {
+.head {
   font-size: 2.5rem;
   font-weight: 800;
   color: #4f46e5;
@@ -22,7 +21,7 @@ h1 {
   text-shadow: 0 2px 8px #e0e7ff;
 }
 
-form {
+.form-con {
   background: #fff;
   padding: 2.5rem 2rem;
   border-radius: 1.5rem;
@@ -36,24 +35,21 @@ form {
   border: 1px solid #e0e7ff;
 }
 
-input[type="text"],
-input[type="password"] {
+.name, .password {
   padding: 0.9rem 1.1rem;
   border: 1.5px solid #c7d2fe;
   border-radius: 0.8rem;
   font-size: 1.1rem;
-  background: #f1f5f9;
   transition: border 0.2s, box-shadow 0.2s;
   outline: none;
+  background: #f1f5f9;
 }
-
-input[type="text"]:focus,
-input[type="password"]:focus {
+.name:focus, .password:focus {
   border: 1.5px solid #6366f1;
   box-shadow: 0 0 0 2px #6366f133;
 }
 
-button[type="submit"] {
+.btn1 {
   background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%);
   color: #fff;
   font-weight: 700;
@@ -66,38 +62,14 @@ button[type="submit"] {
   transition: background 0.2s, transform 0.1s;
 }
 
-button[type="submit"]:hover {
+.btn1:hover {
   background: linear-gradient(90deg, #4f46e5 0%, #6366f1 100%);
   transform: translateY(-2px) scale(1.03);
 }
 
-p {
+.para {
   margin-top: 0.8rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #64748b;
 }
 
-a {
-  color: #4f46e5;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-a:hover {
-  color: #1e293b;
-  text-decoration: underline;
-}
-
-p[style] {
-  /* Error message styling */
-  color: #ef4444 !important;
-  background: #fef2f2;
-  border: 1px solid #fecaca;
-  padding: 0.7rem 1rem;
-  border-radius: 0.6rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  box-shadow: 0 1px 4px #fecaca44;
-}
