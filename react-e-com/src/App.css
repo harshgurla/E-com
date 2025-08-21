@@ -108,13 +108,16 @@ h1 {
 }
 
 .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 10px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  align-items: end;
+
 }
 
 .product-card img {
@@ -130,6 +133,7 @@ h1 {
 }
 
 .product-card button {
+  
   background: #007bff;
   color: #fff;
   border: none;
