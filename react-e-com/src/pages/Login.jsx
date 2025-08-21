@@ -1,4 +1,5 @@
 import { Form, useActionData, Link, Navigate } from 'react-router'
+import './LoginRegister.css';
 
 const Login = () => {
 

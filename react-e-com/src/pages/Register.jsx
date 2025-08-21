@@ -1,4 +1,5 @@
 import { Form, Link, useActionData } from 'react-router';
+import './LoginRegister.css';
 
 const Register = () => {
 
